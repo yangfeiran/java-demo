@@ -1,6 +1,7 @@
 package com.chinacloud.yangfeiran;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
@@ -27,10 +28,18 @@ public class ListTest implements Iterable<String>{
 //        LinkedList list = new LinkedList();
         LinkedList list1 = new LinkedList<>();
         ArrayList list2 = new ArrayList<>();
-list1.add("1");
+        ConcurrentHashMap<Object, Object> objectObjectConcurrentHashMap = new ConcurrentHashMap<>();
+        objectObjectConcurrentHashMap.put("1","one");
+        objectObjectConcurrentHashMap.put("2","two");
+
+        list1.add("1");
 list1.add("1");
 list1.add("1");
 list1.add("2");
+Integer i = 1;
+i.hashCode();
+list1.listIterator();
+list1.iterator();
 System.out.println(list1);
 list1.remove("1");
 list1.remove("1");

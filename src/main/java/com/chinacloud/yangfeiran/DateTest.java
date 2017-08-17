@@ -3,6 +3,7 @@ package com.chinacloud.yangfeiran;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class DateTest {
 
@@ -15,6 +16,7 @@ public class DateTest {
 		int i = 5;
 		nowTime.add(Calendar.MINUTE, -i);
 		System.out.println(nowTime.getTimeInMillis());
+		ConcurrentHashMap<Object, Object> objectObjectConcurrentHashMap = new ConcurrentHashMap<>();
 	}
 
 }
